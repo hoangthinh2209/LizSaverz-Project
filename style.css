@@ -1,0 +1,246 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.btn-red {
+  padding: 12px 30px;
+  background-color: #ff0000;
+  display: inline-block;
+  border-radius: 4px;
+  color: white;
+}
+.btn-red:hover {
+  background-color: #ff4d00;
+  color: white;
+}
+.container,
+.container-xl,
+.container-xxl {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.container-fluid {
+  width: 95%;
+  margin: 0 auto;
+}
+:root {
+  color: black;
+}
+
+.active {
+  color: #ff0000 !important;
+}
+.logo__name {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+.header__logo-icon {
+  font-size: 28px;
+  color: white;
+}
+
+.header__logo-color-red {
+  color: red;
+}
+.header__navbar-item {
+  list-style: none;
+}
+
+.header__navbar-button {
+  text-decoration: none;
+  color: white;
+}
+
+.header__container,
+.header__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header__navbar-item {
+  padding: 0 12px;
+}
+
+.header__container {
+  padding: 1.5rem 0;
+}
+
+.header__navbar-button {
+  font-weight: 700;
+  transition: all 0.4s ease;
+}
+.header__navbar-button:hover {
+  color: #ff0000;
+}
+
+.header-lastChild {
+  margin-left: 20px;
+  transition: all 0.4s ease;
+}
+.header-lastChild:hover {
+  color: white;
+}
+
+/* CAROUSEL */
+.carousel__item {
+  position: absolute;
+  z-index: 5;
+  left: 40%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+}
+.carousel__item-slick {
+  position: relative;
+}
+.carousel__item-img1 {
+  background: url(./img/banner1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 95vh;
+  position: relative;
+  z-index: -2;
+}
+.carousel__item-img2 {
+  background: url(./img/banner2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 95vh;
+  position: relative;
+  z-index: -2;
+}
+.carousel__item-img3 {
+  background: url(./img/banner3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 95vh;
+  position: relative;
+  z-index: -2;
+}
+.carousel__item-img4 {
+  background: url(./img/banner4.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 95vh;
+  position: relative;
+  z-index: -2;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(21, 17, 17, 0.81);
+  z-index: -1;
+}
+.carousel__item-title {
+  font-size: 94px;
+  font-weight: 700;
+  color: white;
+  max-width: 750px;
+  line-height: 86px;
+}
+.carousel__item-button {
+  margin: 80px 0;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  font-weight: 700;
+}
+.carousel__item-buttonPlay {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-left: 30px;
+  color: white;
+  transition: all 0.3s ease;
+}
+.carousel__item-buttonPlay:hover {
+  transform: scale(1.1);
+  border: 2px solid rgba(255, 0, 0, 0.4588235294117647);
+  background: #ff0000;
+}
+.carousel__item-info {
+  color: white;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.slick-next {
+  position: absolute;
+  right: 1%;
+  bottom: 55%;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all.4s ease;
+}
+.slick-prev {
+  position: absolute;
+  left: 1%;
+  bottom: 55%;
+  z-index: 10;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all.4s ease;
+}
+.slick-next:hover,
+.slick-prev:hover {
+  color: #ff0000;
+}
+.slick-dots {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+.slick-dots li {
+  display: inline-block;
+  margin-left: 10px;
+  background: white;
+  border-radius: 50%;
+}
+.slick-dots li.slick-active {
+  background: #ff0000;
+}
+.slick-dots li:hover {
+  background: #ff0000;
+}
+.slick-dots li button {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  color: transparent;
+}

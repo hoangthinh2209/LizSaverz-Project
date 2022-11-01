@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LivSaverz</title>
+    <!-- SLICK CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- FONT AWSOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,700&display=swap"
+        rel="stylesheet">
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__content">
+            <div class="container header__container">
+                <div class="header__logo">
+                    <h1>
+                        <span class="fa-solid fa-heart header__logo-icon"></span>
+                        <a href="" class="logo__name"><span class="header__logo-color-red">Liv</span>Saverz</a>
+                    </h1>
+                </div>
+                <nav class="navbar">
+                    <ul class="header__navbar">
+                        <li class="header__navbar-item"><a class="header__navbar-button active" href="#">HOME</a></li>
+                        <li class="header__navbar-item"><a class="header__navbar-button" href="#">ABOUT</a></li>
+                        <li class="header__navbar-item"><a class="header__navbar-button" href="#">CAUSES</a></li>
+                        <li class="header__navbar-item"><a class="header__navbar-button" href="#">CONTACT</a></li>
+                        <li class="header__navbar-item"><a href="#"
+                                class="header__navbar-button header-lastChild btn-red">DONATE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- CAROUSEL -->
+    <section class="carousel">
+        <div class="single-item">
+            <div class="carousel__item-slick">
+                <div class="carousel__item-img1"></div>
+                <div class="carousel__item">
+                    <h2 class="carousel__item-title">Actions speak louder than works! Give today.</h2>
+                    <div class="carousel__item-icon">
+                        <a href="#" class="carousel__item-button btn-red">Volunteer</a>
+                        <a href="#" class="carousel__item-buttonPlay"><i
+                                class="fa-solid fa-play carousel__button-icon"></i></a>
+                        <span class="carousel__item-info">How We Works</span>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="carousel__item-slick">
+                <div class="carousel__item-img2"></div>
+                <div class="carousel__item">
+                    <h2 class="carousel__item-title">Creative a Better Future through your Help</h2>
+                    <div class="carousel__item-icon">
+                        <a href="#" class="carousel__item-button btn-red">Volunteer</a>
+                        <a href="#" class="carousel__item-buttonPlay"><i
+                                class="fa-solid fa-play carousel__button-icon"></i></a>
+                        <span class="carousel__item-info">How We Works</span>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="carousel__item-slick">
+                <div class="carousel__item-img3"></div>
+                <div class="carousel__item">
+                    <h2 class="carousel__item-title">Actions speak louder than words! Give today.</h2>
+                    <div class="carousel__item-icon">
+                        <a href="#" class="carousel__item-button btn-red">Volunteer</a>
+                        <a href="#" class="carousel__item-buttonPlay"><i
+                                class="fa-solid fa-play carousel__button-icon"></i></a>
+                        <span class="carousel__item-info">How We Works</span>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="carousel__item-slick">
+                <div class="carousel__item-img4"></div>
+                <div class="carousel__item">
+                    <h2 class="carousel__item-title">Creative a Better Future through your Help</h2>
+                    <div class="carousel__item-icon">
+                        <a href="#" class="carousel__item-button btn-red">Volunteer</a>
+                        <a href="#" class="carousel__item-buttonPlay"><i
+                                class="fa-solid fa-play carousel__button-icon"></i></a>
+                        <span class="carousel__item-info">How We Works</span>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </section>
+    <!-- jquery 3.6.1-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- jquery mirage -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
+    <!-- jquery waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+
+    <!-- SLICK JS-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>$(document).ready(function () {
+            $('.single-item').slick({
+                arrows: true,
+                dots: true,
+                prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-angle-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-angle-right"></i></button>',
+            });
+        });</script>
+</body>
+
+</html>
