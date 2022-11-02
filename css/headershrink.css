@@ -1,0 +1,26 @@
+.headerShrink {
+  background: white;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+}
+.headerShrink .header__container {
+  padding: 1rem 0;
+}
+
+.headerShrink .header__logo-icon {
+  color: #ff0000;
+}
+
+.headerShrink .logo__name {
+  color: #272121;
+}
+
+.headerShrink .header__logo-color-red {
+  color: #272121;
+}
+
+.headerShrink .header__navbar-button {
+  color: #272121;
+}
+.headerShrink .header-lastChild {
+  color: white;
+}

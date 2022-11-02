@@ -18,3 +18,18 @@ function checkoutlogin() {
   }
 }
 
+// ADD CLASS HEADER
+
+$(document).ready(function () {
+  var shrinkheader = 1;
+  window.onscroll = function () {
+    if (
+      document.body.scrollTop > shrinkheader ||
+      document.documentElement.scrollTop > shrinkheader
+    ) {
+      $("header").addClass("headerShrink");
+    } else {
+      $("header").removeClass("headerShrink");
+    }
+  };
+});
