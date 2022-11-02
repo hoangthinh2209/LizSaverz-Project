@@ -18,6 +18,17 @@ body {
   border-radius: 4px;
   color: white;
 }
+.btn-orange {
+  padding: 12px 30px;
+  background-color: #ffa500;
+  display: inline-block;
+  border-radius: 4px;
+  color: white;
+}
+.btn-orange:hover {
+  background-color: #ff0000;
+  color: white;
+}
 .btn-red:hover {
   background-color: #ff4d00;
   color: white;
@@ -98,6 +109,14 @@ body {
   color: white;
 }
 
+/* LOGIN SIGN UP */
+.header__navbar .header-loggin {
+  padding-left:12px;
+}
+.header-loggin,
+.header-signup {
+  padding: 0;
+}
 /* CAROUSEL */
 .carousel__item {
   position: absolute;

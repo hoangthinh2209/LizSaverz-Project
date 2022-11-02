@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+/* CAROUSEL */
+.carousel__login {
+  position: relative;
+}
+.carousel__login-img {
+  position: relative;
+  background: url(../img/banner1.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 100vw;
+  z-index: -1;
+}
+
+.carousel__login-overlay {
+  position: absolute;
+  background-color: rgba(21, 17, 17, 0.81);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
