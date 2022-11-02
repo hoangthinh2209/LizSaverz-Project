@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login LivSaverz</title>
+    <title>SignUp LivSaverz</title>
     <!-- FONT GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +18,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- STYLE CSS -->
     <link rel="stylesheet" href="../style.css">
-    <!-- LOGGIN CSS -->
-    <link rel="stylesheet" href="../css/login.css">
+    <!-- SIGN UP CSS -->
+    <link rel="stylesheet" href="../signup.css">
 
 </head>
 
@@ -45,10 +45,10 @@
                             <li class="header__navbar-item"><a class="header__navbar-button" href="#">CONTACT</a></li>
                             <li class="header__navbar-item"><a href="#"
                                     class="header__navbar-button header-lastChild btn-red">DONATE</a></li>
-                            <li class="header__navbar-item header-loggin"><a href="../layout/login.html"
+                            <li class="header__navbar-item header-loggin"><a href="./login.html"
                                     class="header__navbar-button ">LOGIN</a></li>
                             <li class="header__navbar-item"><a href="#" class="header__navbar-button">/</a></li>
-                            <li class="header__navbar-item  header-signup"><a href="../layout/signup.html"
+                            <li class="header__navbar-item  header-signup"><a href="./signup.html"
                                     class="header__navbar-button">SIGN
                                     UP</a></li>
                         </ul>
@@ -62,16 +62,18 @@
         <div class="carousel__login-img"></div>
         <div class="carousel__login-overlay"></div>
     </section>
-    <!-- LOGIN -->
-    <section class="login__table">
-        <div class="login__table-content">
+    <!-- SIGNUP -->
+    <section class="signup__table">
+        <div class="signup__table-content">
             <div class="container">
-                <div class="login__item">
-                    <h4 class="login__title">LOGIN</h4>
-                    <form class="login__item-input">
-                        <input type="name" id="loginName" placeholder="Name" required>
-                        <input type="password" id="loginPassword" placeholder="Password" required>
-                        <button class="btn-red" id="loginButton" onclick="checkoutlogin()">Login</button>
+                <div class="signup__item">
+                    <h4 class="signup__title">SIGN UP</h4>
+                    <form class="signup__item-input">
+                        <input type="name" id="signupName" placeholder="FirstName" required>
+                        <input type="name" id="signupName" placeholder="LastName" required>
+                        <input type="email" id="signupName" placeholder="Email" required>
+                        <input type="password" id="signupPassword" placeholder="Password" required>
+                        <button class="btn-red" id="signupButton" onclick="checkoutlogin()">Sign Up</button>
                     </form>
                     <div id="alert">
                         <p id="thongbao"></p>

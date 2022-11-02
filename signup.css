@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.container-xl,
+.container,
+.container-xxl {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.container-fluid {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* CAROUSEL */
+.carousel__login {
+  position: relative;
+}
+.carousel__login-img {
+  position: relative;
+  background: url(../img/banner1.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 100vw;
+  z-index: -1;
+}
+
+.carousel__login-overlay {
+  position: absolute;
+  background-color: rgba(21, 17, 17, 0.81);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* LOGGIN TABLE */
+.signup__table {
+  height: 1000px;
+}
+
+.signup__item {
+  background-color: #eee;
+  padding: 30px;
+  width: 400px;
+  height: 500px;
+  margin: 150px auto;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 1px 1px 3px 1px rgba(21, 17, 17, 0.185);
+}
+
+.signup__title {
+  font-size: 35px;
+}
+.signup__color-red {
+  color: #ff0000;
+}
+#signupName,
+#signupPassword {
+  display: block;
+  width: 90%;
+  height: 40px;
+  margin: 35px auto;
+}
+#signupButton {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  width: 110px;
+  height: 50px;
+}
+#alert {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
+#thongbao {
+  color: white;
+  line-height: 50px;
+}
