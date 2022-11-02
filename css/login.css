@@ -71,7 +71,6 @@ body {
 .login__color-red {
   color: #ff0000;
 }
-
 #loginName,
 #loginPassword {
   display: block;
@@ -79,7 +78,6 @@ body {
   height: 40px;
   margin: 35px auto;
 }
-
 #loginButton {
   border: none;
   cursor: pointer;
@@ -87,12 +85,12 @@ body {
   width: 100px;
   height: 50px;
 }
-
 #alert {
   width: 100%;
   height: 50px;
+  margin-top: 10px;
 }
-
-#thongbao{
+#thongbao {
+  color: white;
   line-height: 50px;
 }
