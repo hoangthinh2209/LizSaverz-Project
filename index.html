@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LivSaverz</title>
+    <!-- MAGNIFIC POPUP CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
     <!-- SLICK CSS -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- FONT AWSOME -->
@@ -55,9 +58,9 @@
                     <h2 class="carousel__item-title">Actions speak louder than works! Give today.</h2>
                     <div class="carousel__item-icon">
                         <a href="#" class="carousel__item-button btn-red">Volunteer</a>
-                        <a href="#" class="carousel__item-buttonPlay"><i
+                        <a href="#" class="carousel__item-buttonPlay video-link"><i
                                 class="fa-solid fa-play carousel__button-icon"></i></a>
-                        <span class="carousel__item-info">How We Works</span>
+                        <span class="carousel__item-info video-link">How We Works</span>
                     </div>
                 </div>
                 <div class="overlay"></div>
@@ -68,9 +71,9 @@
                     <h2 class="carousel__item-title">Creative a Better Future through your Help</h2>
                     <div class="carousel__item-icon">
                         <a href="#" class="carousel__item-button btn-red">Volunteer</a>
-                        <a href="#" class="carousel__item-buttonPlay"><i
+                        <a href="#" class="carousel__item-buttonPlay video-link"><i
                                 class="fa-solid fa-play carousel__button-icon"></i></a>
-                        <span class="carousel__item-info">How We Works</span>
+                        <span class="carousel__item-info video-link">How We Works</span>
                     </div>
                 </div>
                 <div class="overlay"></div>
@@ -81,9 +84,9 @@
                     <h2 class="carousel__item-title">Actions speak louder than words! Give today.</h2>
                     <div class="carousel__item-icon">
                         <a href="#" class="carousel__item-button btn-red">Volunteer</a>
-                        <a href="#" class="carousel__item-buttonPlay"><i
+                        <a href="#" class="carousel__item-buttonPlay video-link"><i
                                 class="fa-solid fa-play carousel__button-icon"></i></a>
-                        <span class="carousel__item-info">How We Works</span>
+                        <span class="carousel__item-info video-link">How We Works</span>
                     </div>
                 </div>
                 <div class="overlay"></div>
@@ -94,9 +97,9 @@
                     <h2 class="carousel__item-title">Creative a Better Future through your Help</h2>
                     <div class="carousel__item-icon">
                         <a href="#" class="carousel__item-button btn-red">Volunteer</a>
-                        <a href="#" class="carousel__item-buttonPlay"><i
+                        <a href="#" class="carousel__item-buttonPlay video-link"><i
                                 class="fa-solid fa-play carousel__button-icon"></i></a>
-                        <span class="carousel__item-info">How We Works</span>
+                        <span class="carousel__item-info video-link">How We Works</span>
                     </div>
                 </div>
                 <div class="overlay"></div>
@@ -109,7 +112,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
     <!-- jquery waypoints -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-
     <!-- SLICK JS-->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>$(document).ready(function () {
@@ -118,6 +120,21 @@
                 dots: true,
                 prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-angle-left"></i></button>',
                 nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-angle-right"></i></button>',
+            });
+        });</script>
+    <!-- MAGNIFIC POPUP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>$(document).ready(function () {
+            $(".video-link").magnificPopup({
+                items: [
+                    {
+                        //45830194 chính là id của video được lấy từ vimeo player api
+                        src: "https://player.vimeo.com/video/164890650",
+                        type: "iframe",
+                    },
+                ],
+                removalDelay: 300,
+                mainClass: 'mfp-fade',
             });
         });</script>
 </body>
