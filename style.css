@@ -8,7 +8,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
   scroll-behavior: smooth;
 }
 .btn-red {
@@ -111,7 +110,7 @@ body {
 
 /* LOGIN SIGN UP */
 .header__navbar .header-loggin {
-  padding-left:12px;
+  padding-left: 12px;
 }
 .header-loggin,
 .header-signup {
@@ -208,6 +207,40 @@ body {
   font-weight: 600;
   margin-left: 20px;
   cursor: pointer;
+}
+
+/* CAROUSEL BANNER */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  height: 300px;
+}
+.grid__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.grid__item--brown {
+  background: #443737;
+  padding: 40px;
+}
+.grid__item--black {
+  background: #272121;
+  padding: 40px;
+}
+.grid__item--title {
+  line-height: 45px;
+  font-size: 24px;
+}
+.grid__img {
+  background: url(./img/banner4.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 .slick-next {
