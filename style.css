@@ -269,24 +269,64 @@ body {
   height: 100%;
 }
 
+/* CHOOSE US */
+.chooseUs__content {
+  padding: 48px 0;
+}
+.chooseUs__container {
+  padding: 24px 30px;
+}
+.grid__chooseUs {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 24px;
+  height: 350px;
+  max-height: 350px;
+}
+.chooseUs__img1,
+.chooseUs__img2,
+.chooseUs__img3,
+.chooseUs__img4 {
+  background-image: url(./img/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+.chooseUs__img2 {
+  background-image: url(./img/img2.jpg);
+}
+.chooseUs__img3 {
+  background-image: url(./img/img3.jpg);
+}
+.chooseUs__img4 {
+  background-image: url(./img/img4.jpg);
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.grid__chooseUs_title {
+  text-align: center;
+}
+.grid__item-title {
+  text-decoration: none;
+  color: #272121;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 25px;
+  transition: all 0.3s ease;
+}
+.grid__item-title:hover {
+  color: #ff0000;
+}
+.grid__info {
+  color: #777;
+  margin: 0;
+}
 
 .slick-next {
   position: absolute;
