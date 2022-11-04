@@ -33,3 +33,10 @@ $(document).ready(function () {
     }
   };
 });
+
+function donate() {
+  var chooseUstitle = getEle("title");
+  chooseUstitle.innerHTML = "Đã Donate";
+  chooseUstitle.style.backgroundColor = "red";
+  chooseUstitle.style.width = "300px";
+}

@@ -151,8 +151,10 @@
                             </div>
                         </div>
                         <div class="grid__chooseUs_title">
-                            <h3><a class="grid__item-title" href="#">Give Donation</a></h3>
-                            <p class="grid__info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse,
+                            <h3><button class="grid__item-title" href="#" onclick="donate()">Give Donation</button>
+                            </h3>
+                            <p id="title" class="grid__info">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Esse,
                                 praesentium.</p>
                         </div>
                     </div>
@@ -196,9 +198,40 @@
             </div>
         </div>
     </section>
+    <!-- OUR ORGANIZATION -->
+    <section class="ourOrgan">
+        <div class="ourOrgan__content">
+            <div class="container grid__ourOrgan__container">
+                <div class="title__livSaverzWhite">
+                    <h6>OUR ORGANIZATION</h6>
+                    <h3>Want To Get Involved?</h3>
+                    <p class="title__ourOrgan">Lorem illum facere aperiam sequi optio consectetur adipisicing elitFuga,
+                        suscipit totam animi
+                        consequatur saepe blanditiis.Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="grid__ourOrganSystem">
+                    <div class="grid__item--ourOrgan">
+                        <span class="grid__number  counter" data-counter-time="3000" data-counter-delay="10"> 65</span>
+                        <h4 class="grid__ourOrgan--text">Number of supporters</h4>
+                    </div>
+                    <div class="grid__item--ourOrgan ">
+                        <span class="grid__number counter" data-counter-time="3000" data-counter-delay="10"> 165</span>
+                        <h4 class="grid__ourOrgan--text">Fund raised</h4>
+                    </div>
 
-
-
+                    <div class="grid__item--ourOrgan ">
+                        <span class="grid__number counter" data-counter-time="3000" data-counter-delay="10"> 463</span>
+                        <h4 class="grid__ourOrgan--text">Children Helped</h4>
+                    </div>
+                    <div class="grid__item--ourOrgan">
+                        <span class="grid__number  counter" data-counter-time="3000" data-counter-delay="10">
+                            5063</span>
+                        <h4 class="grid__ourOrgan--text">Volunteers Worldwide</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -210,7 +243,7 @@
     <!-- jquery mirage -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
     <!-- jquery waypoints -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <!-- SLICK JS-->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>$(document).ready(function () {
@@ -236,7 +269,12 @@
                 mainClass: 'mfp-fade',
             });
         });</script>
-
+    <!-- countUp js -->
+    <script src="./js/jquery.countup.min.js"></script>
+    <script>$(".counter").countUp({
+            time: 1000,
+            delay: 10,
+        });</script>
     <!-- MAIN JS -->
     <script src="./js/main.js"></script>
 </body>
