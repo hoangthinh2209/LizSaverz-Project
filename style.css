@@ -510,8 +510,8 @@ body {
 }
 
 /* NEWS */
-.newS{
-  padding: 50px 0     ;
+.newS {
+  padding: 50px 0;
 }
 .title__news {
   text-align: left;
@@ -563,6 +563,9 @@ body {
   transform: translateY(-320%);
   opacity: 1;
 }
+.grid__newSItem:hover .grid__overlayNews {
+  opacity: 0.9;
+}
 .grid__newSImg {
   height: 500px;
 }
@@ -576,4 +579,5 @@ body {
   z-index: 1;
   max-height: 500px;
   opacity: 0.6;
+  transition: all 0.3s ease-in-out;
 }
