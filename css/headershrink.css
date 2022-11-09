@@ -24,3 +24,7 @@
 .headerShrink .header-lastChild {
   color: white;
 }
+
+.headerShrink .btn-red {
+  background-color: #ff4d00;
+}

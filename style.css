@@ -10,21 +10,28 @@ body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
 .section {
   padding: 100px 0;
 }
-.btn-red {
+.btn-red,
+.btn-white,
+.btn-orange {
   padding: 12px 30px;
   background-color: #ff0000;
   display: inline-block;
   border-radius: 4px;
   color: white;
+  transition: all 0.4s ease;
 }
 .btn-orange {
-  padding: 12px 30px;
   background-color: #ffa500;
-  display: inline-block;
-  border-radius: 4px;
   color: white;
 }
 .btn-orange:hover {
@@ -35,7 +42,15 @@ body {
   background-color: #ff4d00;
   color: white;
 }
-
+.btn-white:hover {
+  background-color: #ff0000;
+  color: #fff;
+}
+.btn-white {
+  background-color: white;
+  color: #ff0000;
+  transition: all 0.4s ease;
+}
 .title__livSaverz,
 .title__livSaverzWhite {
   margin: 24px 0 48px 0;
@@ -580,4 +595,106 @@ body {
   max-height: 500px;
   opacity: 0.6;
   transition: all 0.3s ease-in-out;
+}
+
+/* JOIN US */
+.joinUs {
+  background: url(./img/banner3.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.joinUs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(21, 17, 17, 0.832);
+  z-index: 1;
+}
+.joinUs__content {
+  padding: 80px 0;
+}
+.joinUs__button {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+.titleJoinUs {
+  position: relative;
+  z-index: 3;
+}
+.titleJoinUs h3 {
+  color: white;
+}
+.titleJoinUs p {
+  color: white;
+  opacity: 0.8;
+}
+.button__joinUs {
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0 3px;
+}
+
+/* OVERLAY */
+#overlay {
+  background-color: rgba(21, 17, 17, 0.914);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  display: none;
+}
+
+#overlay {
+  color: white;
+  text-align: center;
+}
+#overlayTable {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  background-image: linear-gradient(
+    102.4deg,
+    rgba(253, 189, 85, 1) 7.8%,
+    rgba(249, 131, 255, 1) 100.3%
+  );
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+#table h1 {
+  font-size: 35px;
+  margin: 20px 0;
+}
+
+#table p {
+  font-size: 20px;
+  width: 50%;
+  margin: 10px auto;
+}
+
+#tableThongBao {
+  font-size: 25px;
+  color: red;
+}
+
+#tableTotal {
+  font-size: 50px;
+  margin: 40px;
+}
+
+#closeOverlay {
+  color: white;
+  background: none;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  border: none;
+  cursor: pointer;
 }

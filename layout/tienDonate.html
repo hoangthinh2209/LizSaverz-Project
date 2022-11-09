@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate , Saver The World</title>
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,700&display=swap"
+        rel="stylesheet">
+    <!-- FONT AWSOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- HEADER SHRINK CSS -->
+    <link rel="stylesheet" href="../css/headershrink.css">
+    <!-- LOGGIN CSS -->
+    <link rel="stylesheet" href="../css/login.css">
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- TIEN DONATE CSS -->
+    <link rel="stylesheet" href="../css/tienDonate.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__content">
+            <div class="container">
+                <div class="header__container">
+                    <div class="header__logo">
+                        <h1>
+                            <span class="fa-solid fa-heart header__logo-icon"></span>
+                            <a href="" class="logo__name"><span class="header__logo-color-red">Liv</span>Saverz</a>
+                        </h1>
+                    </div>
+                    <nav class="navbar">
+                        <ul class="header__navbar">
+                            <li class="header__navbar-item"><a class="header__navbar-button active"
+                                    href="../index.html">HOME</a>
+                            </li>
+                            <li class="header__navbar-item"><a class="header__navbar-button" href="#">ABOUT</a></li>
+                            <li class="header__navbar-item"><a class="header__navbar-button" href="#">CAUSES</a></li>
+                            <li class="header__navbar-item"><a class="header__navbar-button" href="#">CONTACT</a></li>
+                            <li class="header__navbar-item"><a href="#"
+                                    class="header__navbar-button header-lastChild btn-red">DONATE</a></li>
+                            <li class="header__navbar-item header-loggin"><a href="./layout/login.html"
+                                    class="header__navbar-button ">LOGIN</a></li>
+                            <li class="header__navbar-item"><a href="#" class="header__navbar-button">/</a></li>
+                            <li class="header__navbar-item  header-signup"><a href="./layout/signup.html"
+                                    class="header__navbar-button">SIGN
+                                    UP</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CAROUSEL -->
+    <section class="carousel__login">
+        <div class="carousel__login-img"></div>
+        <div class="carousel__login-overlay"></div>
+    </section>
+
+    <!-- TABLE -->
+    <section class="table__donate">
+        <div class="container">
+            <div class="table__item">
+                <div id="table__content">
+                    <h1>Donate</h1>
+                    <div id="table__checked">
+                        <p>Chọn Quỹ Từ Thiện</p>
+                        <ul>
+                            <li class="type">
+                                <input id="quyCam" type="radio" name="selector" />
+                                <label for="quyCam">Quỹ Cam</label>
+                                <div class="check"></div>
+                            </li>
+
+                            <li class="type">
+                                <input id="quyBuoi" type="radio" name="selector" />
+                                <label for="quyBuoi">Quỹ Bưởi</label>
+                                <div class="check"></div>
+                            </li>
+
+                            <li class="type">
+                                <input id="quyChuoi" type="radio" name="selector" />
+                                <label for="quyChuoi">Quỹ Chuối</label>
+                                <div class="check"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="table__input">
+                        <p>Nhập số tiền cần từ thiện</p>
+                        <input type="number" id="inputDonate" placeholder="Nhập Số Tiền Muốn Donate">
+                    </div>
+                    <div id="table__button">
+                        <button id="clickDonate">Donate!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OVERLAY -->
+    <section id="overlay">
+        <div id="overlayTable">
+            <button id="closeOverlay" href="#">X</button>
+            <div id="table">
+                <h1>THANK YOU</h1>
+                <p>Cám ơn vì đã donate để chúng tôi có thể giúp được cho thế giới</p>
+                <div id="tableThongBao"></div>
+                <div id="tableTotal"></div>
+            </div>
+        </div>
+    </section>
+    <!-- MAIN JS -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

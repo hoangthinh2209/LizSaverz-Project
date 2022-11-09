@@ -1,0 +1,82 @@
+.table__donate {
+  background: linear-gradient(to right, #fbab7e, #f7ce68);
+  min-height: 5000px;
+}
+
+.table__item {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+#table__content {
+  border: 2px solid black;
+  padding: 30px 80px;
+  color: #fff;
+}
+
+#table__content h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+#table__checked p,
+#table__input p {
+  font-size: 25px;
+}
+
+#table__checked li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 7px;
+}
+#quyCam,
+#quyBuoi,
+#quyChuoi {
+  width: 25px;
+  height: 25px;
+}
+
+#table__checked {
+  margin: 40px 0;
+}
+#table__checked ul {
+  margin: 40px 0;
+}
+#table__checked li label {
+  font-size: 25px;
+}
+
+#inputDonate {
+  width: 100%;
+  height: 60px;
+  margin: 40px 0;
+}
+
+#clickDonate {
+  display: block;
+  font-size: 30px;
+  padding: 7px 20px;
+  background: linear-gradient(to left, #fad961, #f76b1c);
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.4s ease;
+}
+#clickDonate:hover {
+  transform: scale(1.1);
+}
+#table__button {
+  display: flex;
+  justify-content: flex-end;
+}
+.table__link-home {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+  color: #784ba0;
+}
+
+/* OVERLAY */
+#overlay{
+    
+}

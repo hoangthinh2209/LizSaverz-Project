@@ -20,23 +20,60 @@ function checkoutlogin() {
 
 // ADD CLASS HEADER
 
-$(document).ready(function () {
-  var shrinkheader = 1;
-  window.onscroll = function () {
-    if (
-      document.body.scrollTop > shrinkheader ||
-      document.documentElement.scrollTop > shrinkheader
-    ) {
-      $("header").addClass("headerShrink");
-    } else {
-      $("header").removeClass("headerShrink");
-    }
-  };
-});
+var shrinkheader = 1;
+window.onscroll = function () {
+  if (
+    document.body.scrollTop > shrinkheader ||
+    document.documentElement.scrollTop > shrinkheader
+  ) {
+    $("header").addClass("headerShrink");
+  } else {
+    $("header").removeClass("headerShrink");
+  }
+};
 
 function donate() {
   var chooseUstitle = getEle("title");
   chooseUstitle.innerHTML = "Đã Donate";
   chooseUstitle.style.backgroundColor = "red";
   chooseUstitle.style.width = "300px";
+}
+
+getEle("clickDonate").onclick = function () {
+  kiemTraChonQuyNao();
+  kiemTraSoTien();
+};
+
+getEle("closeOverlay").onclick = function () {
+  getEle("overlay").style.display = "none";
+  getEle("tableThongBao").innerHTML = "";
+  getEle("tableTotal").innerHTML = "";
+};
+
+function kiemTraChonQuyNao() {
+  var quyCam = getEle("quyCam");
+  var quyBuoi = getEle("quyBuoi");
+  var quyChuoi = getEle("quyChuoi");
+  var thongBao = getEle("tableThongBao");
+  if (quyCam.checked) {
+    return (thongBao.innerHTML = "Quỹ Cam");
+  } else if (quyBuoi.checked) {
+    return (thongBao.innerHTML = "Quỹ Bưởi");
+  } else if (quyChuoi.checked) {
+    return (thongBao.innerHTML = "Quỹ Chuối");
+  }
+}
+
+function kiemTraSoTien() {
+  var soTien = getEle("inputDonate").value;
+  if (soTien < 100000) {
+    alert("Vui lòng nhập số tiền lớn hơn 100000");
+    getEle("overlay").style.display = "none";
+  } else if (soTien > 1000000000) {
+    alert("Vui lòng nhập số tiền nhỏ hơn 1000000000");
+    getEle("overlay").style.display = "none";
+  } else {
+    getEle("overlay").style.display = "block";
+    getEle("tableTotal").innerHTML = soTien + " VNĐ";
+  }
 }
