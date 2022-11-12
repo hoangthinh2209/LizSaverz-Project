@@ -323,12 +323,72 @@
                     <p>Join your hand with us for a better life and beautiful future</p>
                 </div>
                 <div class="joinUs__button">
-                    <a class="btn-white button__joinUs" id="button__donate" href="./layout/tienDonate.html">Donate Now</a>
+                    <a class="btn-white button__joinUs" id="button__donate" href="./layout/tienDonate.html">Donate
+                        Now</a>
                     <a class=" btn-red button__joinUs" href="#">Contact Us </a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- TESTIMONIALS -->
+    <section class="testimonials ">
+        <div class="testContent">
+            <div class="container">
+                <div class="title__livSaverz">
+                    <h6>TESTIMONIALS</h6>
+                    <h3>What Our People Says?</h3>
+                </div>
+                <div class="responsive container testimonials__content">
+                    <div class="test__item">
+                        <div class="testtimonials__img">
+                            <img class="test__img" src="./img/f2.jpg" alt="f2">
+                        </div>
+                        <p class="test__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit
+                            id
+                            accusantium
+                            officia quod quasi necessitatibus perspiciatis Harum error provident
+                            quibusdam tenetur.</p>
+                        <span class="test__name">- Jenkins</span>
+                    </div>
+                    <div class="test__item">
+                        <div class="testtimonials__img">
+                            <img class="test__img" src="./img/f3.jpg" alt="f2">
+                        </div>
+                        <p class="test__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit
+                            id
+                            accusantium
+                            officia quod quasi necessitatibus perspiciatis Harum error provident
+                            quibusdam tenetur.</p>
+                        <span class="test__name">- Jenkins</span>
+                    </div>
+                    <div class="test__item">
+                        <div class="testtimonials__img">
+                            <img class="test__img" src="./img/f4.jpg" alt="f2">
+                        </div>
+                        <p class="test__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit
+                            id
+                            accusantium
+                            officia quod quasi necessitatibus perspiciatis Harum error provident
+                            quibusdam tenetur.</p>
+                        <span class="test__name">- Jenkins</span>
+                    </div>
+                    <div class="test__item">
+                        <div class="testtimonials__img">
+                            <img class="test__img" src="./img/f5.jpg" alt="f2">
+                        </div>
+                        <p class="test__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit
+                            id
+                            accusantium
+                            officia quod quasi necessitatibus perspiciatis Harum error provident
+                            quibusdam tenetur.</p>
+                        <span class="test__name">- Jenkins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- jquery 3.6.1-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -344,6 +404,39 @@
                 dots: true,
                 prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-angle-left"></i></button>',
                 nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-angle-right"></i></button>',
+            });
+            $('.responsive').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
         });</script>
     <!-- MAGNIFIC POPUP -->

@@ -427,6 +427,7 @@ input::-webkit-inner-spin-button {
   border-radius: 50%;
   width: 20px;
   height: 20px;
+  line-height: 20px;
 }
 .slick-dots li.slick-active {
   background: #ff0000;
@@ -697,4 +698,60 @@ input::-webkit-inner-spin-button {
   top: 10px;
   border: none;
   cursor: pointer;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  padding: 60px 0;
+}
+.test__item {
+  text-align: center;
+}
+.test__img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+
+.testtimonials__img {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.test__text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #1c1717;
+  text-align: center;
+  width: 65%;
+  margin: auto;
+}
+
+.test__name {
+  display: block;
+  margin: 10px 0;
+  color: #ff0000;
+  font-style: italic;
+}
+.testimonials__content {
+  position: relative;
+}
+.testimonials .slick-dots {
+  right: 44%;
+  bottom: -15%;
+}
+
+.testimonials .slick-dots li button {
+  background: #272121;
+  opacity: 0.4;
+}
+
+.testimonials .slick-dots li.slick-active button {
+  background: transparent;
+}
+
+.testimonials .slick-dots li:hover button {
+  background: transparent;
 }
